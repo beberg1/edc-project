@@ -1,4 +1,6 @@
-pred = pred_KNN(testv, templates, 7);
+tic
+pred = pred_KNN(testv, templates, 1);
+toc
 function predicted_labels = pred_KNN(data, templ, k)
     % Get the number of data points and the number of classes
     [N, ~] = size(data);
@@ -38,4 +40,5 @@ function predicted_labels = pred_KNN(data, templ, k)
         % Decrese to get correct label
         predicted_labels(i) = predicted_labels(i) - 1; 
     end
+    
 end

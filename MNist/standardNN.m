@@ -1,4 +1,6 @@
+tic
 standard_pred = NN_standard(testv, trainv, trainlab, 1);
+toc
 function predicted_labels = NN_standard(data, templ, templ_labels, k)
     % Get the number of data points and the number of classes
     [N, ~] = size(data);

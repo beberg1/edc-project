@@ -1,4 +1,6 @@
+tic
 templates = cluster(trainv, trainlab, 64, 10);
+toc
 % class_data = separate_classes(trainv, trainlab, 10);
 
 function templates = cluster(train_d, train_l, M, num_classes)
